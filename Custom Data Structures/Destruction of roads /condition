@@ -1,0 +1,12 @@
+There are $n$ cities in Berland connected $m$ by roads. 
+It is guaranteed that initially the graph of cities is connected, i.e. there is a path between any pair of vertices.In Berland, there are q earthquakes, during each of them exactly one road is destroyed.
+After each earthquake, it is necessary to find out whether the received graph from the cities is coherent. After another earthquake, the road is not rebuilt, that is, it is destroyed forever.
+
+Input
+  The first line of the input file contains three numbers n, m, q (1 <= n, m, q <= 100000$, 2 <= n) - the number of cities, roads and earthquakes in Berland, respectively$v$u$m. 
+  It is guaranteed that $u ne v$ and that there is no more than one road between each pair of cities.
+  The next q lines contain one number each x_i (1 le x_i le m) - the number of the road that will be affected during the $i$ earthquake. 
+  It is guaranteed that two different earthquakes do not destroy the same road.
+
+Output
+  Output a string of length q from zeros and ones. The i_th character is 1 if the graph is connected after the i_th earthquake, otherwise print 0.
