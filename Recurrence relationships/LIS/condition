@@ -1,0 +1,9 @@
+It is necessary to cross out the minimum number of elements from the given numerical sequence A, consisting of n elements, so that the remaining elements form a strictly increasing subsequence of elements. 
+The constructed algorithm must have a labor intensity of O(n log n).
+
+Input
+The first line of the input file contains the number n (1 ≤ n ≤ 700,000). 
+The next line contains n elements of sequence A, which are separated by spaces (sequence elements are integers that do not exceed 1,000,000,000 modulo).
+
+Output
+Print a single number, which is the length of a strictly increasing subsequence of elements.
