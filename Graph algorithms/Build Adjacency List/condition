@@ -1,0 +1,9 @@
+An undirected graph is given by a list of edges. Build a list of the adjacency of this graph. It is guaranteed that there are no loops or multiples of edges in the graph.
+
+Input
+  The first line contains two integers, n and m, the number of vertices (1 ≤ n ≤ 100,000) and the number of edges of the graph (0 ≤ m ≤ 200,000). 
+  The vertices of the graph are numbered from 1 to n. 
+  The following m lines describe the edges: in each line, two vertices you and v (1 ≤ u, v ≤ n, with you ≠ v) separated by a space, which are connected by an edge.
+
+Output
+  List the adjacency of the graph as n lines. On the i-th line, print the number of vertices adjacent to the i-th vertex, followed by the numbers of those vertices separated by a space, in random order.
