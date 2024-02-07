@@ -1,0 +1,12 @@
+Given a matrix A of natural numbers of size n × m. Each pass through element (i, j) incurs a penalty ai, j. 
+It is necessary to minimize the penalty and go from element (1, 1) to (n, m), 
+while from the current element you can go to any of the three neighboring ones located in the line with a number one greater (i.e. from element (i , j) you can go to one of the elements (i + 1, j − 1), (i + 1, j), (i + 1, j + 1), if they exist).
+
+Input
+  The first line contains two numbers: n and m, where n is the number of rows of matrix A, and m is the number of columns of matrix A.
+  The next n lines define the matrix A itself: each line contains m integers separated by single spaces.
+
+Limits: 2 ≤ n ≤ 200, 1 ≤ m ≤ 1 000, 0 ≤ ai, j ≤ 1 000 000.
+
+Output
+  Print one integer — the minimum cost of the path or −1 (minus one) if there is no path.
