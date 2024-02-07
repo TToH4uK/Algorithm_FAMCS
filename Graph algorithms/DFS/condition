@@ -1,0 +1,11 @@
+For the directed graph defined by the adjacency matrix, a depth search was performed. 
+In case of ambiguity in the choice of the next vertex, the vertex with the lowest number was always chosen. 
+In the process of searching in depth, at the time of visiting the peak, it was assigned a mark (the numbering of marks begins with one). 
+Determine which label each of the vertices of the graph has received.
+
+Input
+  The first line contains an integer n vertices of the orgraph (1 ≤ n ≤ 100). 
+  The vertices are numbered from 1 to n. Next, the adjacency matrix of the graph is written: n rows of n numbers, each of which is 0 or 1. 
+  Numbers are separated by single spaces. It is guaranteed that all elements on the main diagonal are zero.
+Output
+  Output n numbers, the i-e of which is the label received by the vertex i.
