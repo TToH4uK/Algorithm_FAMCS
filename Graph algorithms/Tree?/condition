@@ -1,0 +1,8 @@
+An undirected graph without loops and multiple edges is given. Determine whether this graph is a tree.
+
+Input
+  The first line of the input file contains an integer N — the number of vertices in the graph (1 ≤ N ≤ 100).
+  Next, the adjacency matrix of the graph is written: N rows of N numbers, each of which is 0 or 1. It is guaranteed that the matrix is symmetric and all elements on the main diagonal are zero.
+
+Output
+  Print Yes if the graph is a tree by one of the equivalent definitions, and No otherwise.
