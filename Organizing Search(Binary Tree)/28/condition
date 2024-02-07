@@ -1,0 +1,9 @@
+Find in the tree the average value of the vertices whose subtree heights are equal. Delete (by right deletion) the given vertex, if it exists. 
+The leaves of the tree are also considered as vertices whose subtrees have equal heights.
+
+If a vertex does not have a subtree, then its height is set to −1.
+
+Input
+  The input file contains a sequence of numbers - the keys of the vertices in the order they were added to the tree. It is guaranteed that the tree has at least two vertices.
+Output
+  The output file must contain the sequence of vertex keys obtained by a forward left traversal of the resulting tree.
