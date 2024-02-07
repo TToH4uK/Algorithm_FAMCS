@@ -1,0 +1,14 @@
+A sequence of s matrices A1, A2, ..., As is given. 
+You want to determine the order in which they should be multiplied so that the number of atomic multiplications is kept to a minimum. 
+The matrices are assumed to be compatible with respect to matrix multiplication (i.e., the number of columns of the matrix Ai − 1 is the same as the number of rows of the matrix Ai).
+
+Let us assume that matrix product is an operation that takes as input two matrices of size k × m and m × n and returns a matrix of size k × n, having spent kmn of atomic multiplication operations. 
+(The base type allows you to store any element of the final matrix and any possible intermediate matrix, so multiplying two elements requires a single atomic operation.)
+
+Input
+The first line contains the number of s matrices (2 ≤ s ≤ 100). In the following s rows, 
+the dimensions of the matrices are specified: the row i + 1 contains the number of ni rows separated by a space and the number mi of the columns of the matrix Ai (1 ≤ ni, mi ≤ 100). 
+It is guaranteed that mi is the same as ni + 1 for all indices i from 1 to s − 1.
+
+Output
+Output the minimum number of atomic multiplications required to multiply s matrices.
