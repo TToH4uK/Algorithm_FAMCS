@@ -1,0 +1,12 @@
+Implement binary search on an array of numbers sorted in descending order.
+It is forbidden to use ready-made binary search functions from standard libraries.
+
+Input
+  The first line contains an integer n — the number of numbers in the array (0 <= n <= 3 * 10^5).
+  The second line contains n numbers of the array separated by a space. All numbers are integers and belong to the interval from -2^{31} to 2^{31} - 1 inclusive. 
+  The third line contains an integer k — the number of requests (0 <= k <= 3 * 10^5).The fourth line contains k of query integers from the range from -2^{31} to 2^{31} - 1 inclusive.
+Output
+  For each query number x on a separate line, print b, l, and r separated by a space, where b is 1 if x is present in the array, or 0 otherwise;
+  l is the index of the first element greater than or equal to x;
+  r is the index of the first element greater than x. 
+  The elements of the array are numbered with indices from 0 to n-1.If there are no matching elements in the array, agree that the returned index will be n.
