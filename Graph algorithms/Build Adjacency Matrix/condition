@@ -1,0 +1,9 @@
+An undirected graph is given by a list of edges. Construct an adjacency matrix of this graph. It is guaranteed that there are no loops or multiples of edges in the graph.
+
+Input
+  The first line contains two integers n and m — the number of vertices (1 ≤ n ≤ 100) and the number of edges of the graph (0 ≤ m ≤ n(n − 1) / 2). 
+  The vertices of the graph are numbered from 1 to n. 
+  The following m lines describe the edges: in each line, two vertices you and v (1 ≤ u, v ≤ n, with you and v different) are separated by a space, which are connected by an edge.
+
+Output
+  Output the adjacency matrix of the graph: n rows of n numbers, each number is 0 or 1, the numbers in the rows are separated by spaces.
