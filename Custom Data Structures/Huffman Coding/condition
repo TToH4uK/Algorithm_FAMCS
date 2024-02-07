@@ -1,0 +1,23 @@
+Huffman coding (D. A. Huffman) refers to prefix coding that minimizes the length of text by encoding different characters with different numbers of bits.
+
+Let us recall the process of constructing the code. First, a Huffman code tree is constructed. 
+Let the original alphabet consist of n characters, the i-th of which appears pi times in the input text. 
+Initially, all symbols are considered active vertices of the future tree, the i-th vertex is marked with the value pi. 
+At each step, we take the two active vertices with the smallest labels, create a new vertex, labeling it with the sum of the labels of these vertices, and make it their parent. 
+The new vertex becomes active, and its two sons are removed from the list of active vertices. 
+The process is repeated many times until only one active vertex remains, which is considered the root of the tree.
+
+Note that the symbols of the alphabet are represented by the leaves of this tree. For each leaf (character), the length of its Huffman code is equal to the length of the path from the root of the tree to it.
+The code itself is constructed as follows: for each internal vertex of the tree, consider two arcs going from it to its sons. We assign the label 0 to one of the arcs, and 1 to the other. 
+The code of each character is a sequence of zeros and ones on the path from the root to the leaf.
+
+The task is to calculate the length of the text after it has been encoded using the Huffman method. 
+The text itself is not given, we only know how many times each character appears in the text. 
+This is enough to solve the problem, since the length of the code depends only on the frequency of symbols.
+
+Input
+  The first line contains the integer n (2 ≤ n ≤ 500 000).
+  The second line contains n numbers pi — the frequency of occurrence of characters in the text (1 ≤ pi ≤ 109, pi ≤ pi + 1 for each i from 1 to n − 1).
+
+Output
+  Print a single number—the length (in bits) of the encoded text.
