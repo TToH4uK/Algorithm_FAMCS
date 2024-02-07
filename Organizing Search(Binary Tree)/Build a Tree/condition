@@ -1,0 +1,8 @@
+Based on the set of keys, build a binary search tree and perform a direct left traversal of it.
+
+Input
+The input file contains a sequence of numbers — vertex keys in the order in which they were added to the tree. Keys are specified in the format, one per line.
+In a search tree, all keys are unique by definition, so if you try to add a key to the tree that is already there, it is ignored.
+
+Output
+The output file must contain the sequence of vertex keys obtained by the direct left traversal of the tree.
