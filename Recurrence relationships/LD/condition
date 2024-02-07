@@ -1,0 +1,13 @@
+Two character sequences A and B are input, each sequence is not empty, consists of small Latin letters and has a length of no more than 1000 characters. 
+You must convert sequence A to sequence B with the minimum cumulative penalty, which is defined as follows:
+
+removing the character from the line A equals x points;
+inserting a character into a line A is equal to y points;
+replacing a character in line A with any other one equals z points.
+
+Input
+The first three lines contain the numbers x, y, z, respectively. All numbers are integer positive and do not exceed 1,000,000.
+The next two lines contain character sequences A and B (string element type).
+
+Output
+Output the minimum total penalty.
