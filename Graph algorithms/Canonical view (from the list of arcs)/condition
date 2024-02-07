@@ -1,0 +1,10 @@
+A directed graph is specified, which is the root tree. The vertices of the graph are numbered with integers from 1 to n. 
+The arcs run from the root to the leaves. Print the canonical way to specify this tree.
+
+The canonical way to represent a root tree on n vertices is an array P of size n, where pi is the father of the vertex i, and if the vertex i is the root of the tree, then pi is assumed to be zero.
+
+Input
+  The first line contains an integer n (1 ≤ n ≤ 100,000). In the following n − 1 lines, the arcs of the graph are defined. 
+  The arc going from the vertex u to the vertex v is given by a pair of numbers you and v, separated by a space (1 ≤ u, v, ≤ n). It is guaranteed that the graph is a root tree.
+Output
+  Output n numbers, which are the elements of the P array. 
