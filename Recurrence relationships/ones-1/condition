@@ -1,0 +1,5 @@
+The number N is given. You need to determine how many binary strings of length N there are that have exactly K units.
+Input 
+  The first line of input data contains two non-negative integers N and K (0 <= K <= N <= 1000).
+Output
+  Output a single number - the answer to the problem. Since the answer can be very large, it is necessary to output it modulo 10^9 + 7.
