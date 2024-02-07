@@ -1,0 +1,17 @@
+Some matrix A of size n × n specifies the results of a chemical reaction of substances. 
+All substances have numbers from 1 to n. 
+Element aij of the matrix is equal to the number of the substance that is obtained as a result of the chemical reaction of substance i with substance j (if the substances do not react, then aij = 0).
+A test tube is given into which some chemicals are sequentially added. 
+Substance i enters into a chemical reaction with substance j if it is located in a test tube directly above it. If substances do not react, then they do not mix in a test tube.
+
+It is necessary to determine which substances and in what sequence will be in the test tube after all the substances have been added to the test tube.
+
+Input
+  The first line contains the number n of different substances (1 ≤ n ≤ 300) and the number m (1 ≤ m ≤ 1 000 000) of added substances.
+  The next n lines contain the elements of the matrix, each line contains the elements of the corresponding row of the matrix. 
+  It is guaranteed that the matrix is symmetrical (aij = aji for all i, j) and identical substances do not react with each other, but mix (aii = i for all i).
+
+The last line contains m numbers that correspond to the numbers of the substances. The numbers of the chemicals appear on the line in the order in which they were added to the test tube.
+
+Output
+  The single line of the output file contains the numbers of the chemicals that were produced in the test tube, starting from the top level and ending with the bottom level.
