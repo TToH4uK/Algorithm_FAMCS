@@ -1,0 +1,13 @@
+A hash table consists of m cells (cells are numbered with integers from 0 to m − 1). The open addressing method is used to resolve collisions. Function
+
+h(x, i) = ((x mod m) + c ⋅ i) mod m
+Specifies a linear sequence of free cell samples, where x is the key, i is the attempt number (attempts are numbered from zero), and c is a constant.
+N keys were sequentially added to the table. If the key is already in the table, it is not added again.
+Determine which key is stored in each cell in the table when all operations are completed.
+
+Input
+  In the first line, three integers are separated by a space: the size m of the table (2 ≤ m ≤ 10,000), the constant c (1 ≤ c ≤ m − 1), and the number n keys to add (0 ≤ n ≤ 10,000). 
+  The number c is mutually simple with the number m. Next, the next n lines contain the keys that are added to the hash table, i.e. integers from the range from 0 to 109. 
+  Keys can be repeated, but it is guaranteed that there is enough space in the table to accommodate all of the unique keys from the n given keys.
+Output
+  Output exactly m numbers, the i-th number describes the i-th cell (0 ≤ i ≤ m − 1). If the cell is empty, print −1, otherwise print the key it contains.
