@@ -1,0 +1,9 @@
+Recall that a one-dimensional array of length n can be used to compactly store a complete binary tree on n vertices in the computer's memory. 
+Vertex keys are the values of the array elements, indexing starts with one, and the element with index i has sons of elements with indexes 2i and 2i + 1 (if such elements exist).
+It is forbidden to use special validation methods from the standard libraries (std::is_heap in C++, etc.).
+
+Input
+  The first line contains the number of n elements in the array (1 ≤ n ≤ 100,000). The second line contains n integers that do not exceed 109 modulo 109, which are the elements of the array.
+Output
+  Print Yes if there is a binary heap that is represented in memory by a given array, or No otherwise.
+
