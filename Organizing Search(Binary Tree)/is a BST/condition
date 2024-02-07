@@ -1,0 +1,15 @@
+A binary tree is specified. Let's assume that a binary search tree can have vertices with the same keys. 
+Then, in order for the tree to be searchable, the following requirement must be met: 
+for each vertex x, all keys in the left subtree of the vertex x are less than the vertex key x,and all keys in the right subtree are greater than or equal to the vertex key x.
+
+Input
+  The first line of the input file contains a single integer n (1 leq n leq 8 * 10^5) – the number of vertices in the tree. 
+  The next line contains a single integer m (-2^31 <= m <= 2^31 - 1), which is the value at the root vertex of the tree. 
+  In each of the following n - 1 lines, the three parameters m, p, and c are listed separated by spaces, which specify a vertex of the tree.m is an integer (-2^31 <= m <= 2^31 - 1), 
+  the value written at the vertex.
+  p is an integer (1 < = p < = n - 1), the line number of the input file in which the parent of the current vertex was specified (line numbering from zero). 
+  It is guaranteed that p is less than the number of the current line.c can take one of two values 'L' or 'R'.
+  A value of 'L' indicates that the current vertex is attached to the parent vertex on the left, and a value of 'R' indicates that it is connected to the right vertex.
+  It is guaranteed that the sum of all rows specifies a valid binary tree.
+Output
+  On a single line, print 'YES' if the specified tree is a binary search tree, and 'NO' otherwise.
