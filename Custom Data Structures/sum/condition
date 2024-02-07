@@ -1,0 +1,9 @@
+Consider the following model problem. Initially, a sequence of A numbers of length n is given (indexed from zero):a_0, a_1, a_2, ..., a_{n-1}.
+There are two types of requests.
+Request a modification. The index is i and the number x. You need to add the number x to the i element.
+Request the amount. A pair of indices l and r is specified. You need to calculate the sum of the elements on the half-interval [l, r), i.e. a_l + a_{l+1} + ... + a_{r - 1}, and return the result.
+Input
+  The first line contains an integer n — the number of array elements (1 <= n <= 300,000$).
+  The second line contains n integers a_i (-10^9 <= a_i <= 10^9).The third line contains an integer q — the number of requests (1 <= q <= 300,000).
+Output
+  For each query of the second type, output the sum of the elements in the corresponding half-interval in a separate line.
