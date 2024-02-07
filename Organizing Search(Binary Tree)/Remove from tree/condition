@@ -1,0 +1,11 @@
+Based on the set of keys, build a binary search tree. Remove the key from it (by right removal) if it is in the tree. Perform a straight left traversal of the resulting tree.
+
+Input
+The first line contains an integer, which is the key that needs to be removed from the tree.
+The second line is empty.
+The following lines contain a sequence of numbers—the vertex keys in the order in which they were added to the tree. 
+Keys are specified in the format, one per line. The tree contains at least two vertices.
+Recall that in the search tree, all keys are unique by definition, so if you try to add a key to the tree that is already there, it is ignored.
+
+Output
+Output the sequence of vertex keys obtained by the straight left traversal of the tree.
