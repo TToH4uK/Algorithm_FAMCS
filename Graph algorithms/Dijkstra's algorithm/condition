@@ -1,0 +1,9 @@
+An undirected weighted pseudograph is specified, the vertices of which are numbered from 1 to n. 
+You want to find the shortest chain between vertices 1 and n. It is guaranteed that (1, n)-net exists.
+
+Input
+  The first line contains integers n and m, where n is the number of vertices and m is the number of edges in the pseudograph (1 ≤ n ≤ 200,000, 0 ≤ m ≤ 300,000).
+  Next, the m lines contain edges, one per line. Each edge is given by three integers ui, vi, wi, where ui, vi are the ends of the edge, and wi is its length (1 ≤ ui, vi ≤ n, 0 ≤ wi ≤ 11 111).
+
+Output
+  Output the length of the shortest chain.
